@@ -6,7 +6,7 @@ import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Menu = () => {
     return (
-        <div className='menu bg-darkaccentbg flex flex-col my-3 p-5 items-center xs:h-[97%] sm:h-auto md:h-[97%]'>
+        <div className='menu bg-darkaccentbg flex flex-col my-3 p-5 items-center xs:h-[97%] sm:h-auto md:h-[97%] lg:rounded-2xl rounded-md'>
             <div className='grow-0.3 text-darktext border-b-2 py-10 border-darkcirclebg w-full h-[25%]'>
                 <div className='flex flex-row items-center justify-center'>
                     <div className='lg:w-[90px] lg:h-[90px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] rounded-full bg-darkcirclebg'>
