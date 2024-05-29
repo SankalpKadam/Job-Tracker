@@ -33,6 +33,7 @@ const DataVisualization = () => {
                                 rounded-md
                                 p-2
                                 mt-3
+                                hidden
                                 '
                     ref={ref}>
                     <p onClick={() => {
