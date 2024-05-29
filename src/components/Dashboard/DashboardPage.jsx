@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
 import Navbar from '../UniversalComponents/Navbar/Navbar'
-import CountCard from './DashboardComponents/CountCard'
+import Cards from './DashboardComponents/Graph/Cards/Cards';
+import DataVisualization from './DashboardComponents/Graph/DataVisualization/DataVisualization';
 const DashboardPage = () => {
 
     //Manipulating button background and color
     const [active, setActive] = useState('graph');
 
+    
 
 
     return (
@@ -20,7 +22,8 @@ const DashboardPage = () => {
 
                 <Navbar />
             </div>
-            <div className='ml-8
+            <div className='md:ml-8
+                            ml-1
                             flex 
                             flex-col 
                             items-center 
@@ -70,55 +73,13 @@ const DashboardPage = () => {
                                         delay-150
                                         rounded-3xl
                                         ${active == "flow" ? "bg-darktext text-darkbg" : ""}`}
-                            onClick={()=>setActive('flow')}>
+                            onClick={() => setActive('flow')}>
                             Flow
                         </div>
                     </div>
                 </div>
-                <div className='grow-[0.1] 
-                                flex
-                                md:flex-row
-                                flex-col
-                                flex-nowrap
-                                justify-between 
-                                items-center 
-                                w-full
-                                overflow-auto
-                                '>
-                    <div className='w-full
-                                    h-full 
-                                    m-auto
-                                    lg:mt-0
-                                    mt-2 
-                                    items-center 
-                                    flex'>
-
-                        <CountCard title='Application' />
-                    </div>
-                    <div className='w-full
-                                    h-full 
-                                    m-auto
-                                    lg:mt-0
-                                    mt-2 
-                                    items-center 
-                                    flex'>
-
-                        <CountCard title='Leetcode' />
-                    </div>
-                    <div className='w-full 
-                                    h-full 
-                                    m-auto
-                                    lg:mt-0
-                                    mt-2 
-                                    items-center 
-                                    flex'>
-
-                        <CountCard title='Networking' />
-                    </div>
-                </div>
-                <div className='grow-[0.83]'>
-
-                </div>
+                <Cards/>
+                <DataVisualization/>
             </div>
         </div>
     )
