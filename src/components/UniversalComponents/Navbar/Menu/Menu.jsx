@@ -25,17 +25,17 @@ const Menu = () => {
                     Dashboard
                     {/* </div> */}
                 </Link>
-                <Link to={"/"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
+                <Link to={"/problemsolving"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
                     <div className='p-1 mr-2 bg-darkleetcodeaccentt rounded-md'>
                         <DataObjectIcon fontSize='medium' />
                     </div>
                     LeetCoding</Link>
-                <Link to={"/"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
+                <Link to={"/jobapplications"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
                     <div className='p-1 mr-2 bg-darkapplicationaccentt rounded-md'>
                         <AppRegistrationIcon fontSize='medium' />
                     </div>
                     Application</Link>
-                <Link to={"/"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
+                <Link to={"/networking"} className='text-darktext my-4 flex items-center md:text-2xl lg:text-base'>
                     <div className='p-1 mr-2 bg-darknetworkingaccentt rounded-md'>
                         <LinkedInIcon fontSize='medium' />
                     </div>
