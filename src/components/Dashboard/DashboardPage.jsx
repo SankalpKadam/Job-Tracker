@@ -14,7 +14,7 @@ const DashboardPage = () => {
 
                 <Navbar />
             </div>
-            <div className='ml-6
+            <div className='ml-8
                             flex 
                             flex-col 
                             items-center 
@@ -34,35 +34,39 @@ const DashboardPage = () => {
                 </div>
                 <div className='grow-[0.1] 
                                 flex
-                                flex-row
-                                flex-nowrapp
+                                md:flex-row
+                                flex-col
+                                flex-nowrap
                                 justify-between 
                                 items-center 
                                 w-full
-                                overflow-x-auto
+                                overflow-auto
                                 '>
-                    <div className='lg:w-1/3
-                                    min-w-[200px]
+                    <div className='w-full
                                     h-full 
-                                    m-auto 
+                                    m-auto
+                                    lg:mt-0
+                                    mt-2 
                                     items-center 
                                     flex'>
 
                         <CountCard title='Application' />
                     </div>
-                    <div className='lg:w-1/3
-                                    min-w-[200px] 
+                    <div className='w-full
                                     h-full 
-                                    m-auto 
+                                    m-auto
+                                    lg:mt-0
+                                    mt-2 
                                     items-center 
                                     flex'>
 
                         <CountCard title='Leetcode' />
                     </div>
-                    <div className='lg:w-1/3
-                                    min-w-[200px] 
+                    <div className='w-full 
                                     h-full 
-                                    m-auto 
+                                    m-auto
+                                    lg:mt-0
+                                    mt-2 
                                     items-center 
                                     flex'>
 

@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const CountCard = ({title="Application",count="200"}) => {
   return (
-    <div className='bg-darkaccentbg w-[80%] p-4 h-[100%] rounded-2xl drop-shadow-md flex flex-col items-center justify-center'>
+    <div className='bg-darkaccentbg w-[90%] p-4 h-[100%] rounded-2xl drop-shadow-md flex flex-col items-center justify-center'>
       <div className='flex flex-col items-center justify-center w-full'>
         <div className='text-darktext grow-[0.3]'>
             {
