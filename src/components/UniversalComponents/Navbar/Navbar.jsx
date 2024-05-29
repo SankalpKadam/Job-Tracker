@@ -12,7 +12,7 @@ const Navbar = () => {
                     menuOpen ? setMenuOpen(false) : setMenuOpen(true)
                 }} />
             </div>
-            <div className={`lg:ml-3 rounded-md h-full lg:translate-y-0 transition ease-in-out delay-150 ${menuOpen ? 'translate-y-[-1%]' : 'xs:translate-y-[-120%] sm:translate-y-[-160%]'}`}>
+            <div className={`lg:ml-3 lg:relative absolute z-10 rounded-md h-full w-full lg:translate-y-0 transition ease-in-out delay-150 ${menuOpen ? 'translate-y-[-1%]' : 'xs:translate-y-[-120%] sm:translate-y-[-160%]'}`}>
                 <Menu />
             </div>
         </div>
